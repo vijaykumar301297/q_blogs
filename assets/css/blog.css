@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow-y:scroll ;
+    background: #ffff;
+}
+
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 1rem 0;
+    width: 100%;
+    background-color: azure;
+    z-index: 1000;
+    position: fixed;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 10%);
+    width: 100%;
+    height: 7rem;
+    top: 0;
+}
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.company__logo {
+    width: 20rem;
+    display: block;
+}
+  
+.logo, .q_logo{
+    width: 100%;
+    height: 5rem;
+}
+  
+  
+.navbar {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+  
+.btn_read, .btn_contact {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 2rem 1rem 0px;
+    color:black;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(to left, transparent 50%, #2462AA 50% );
+    background-size: 200%;
+    background-position: right bottom;
+    border: none;
+    border-radius: unset;
+    background-size: 220%;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    margin-right: -2px;
+}
+
+.btn_contact {
+    padding: 1rem 2rem ;
+}
+  
+.btn_icon {
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    background:#2462AA;
+    border: none;
+    color: white;
+}
+    
+.btn_read:hover {
+    background-position: left bottom;
+    color: white;
+    border: none;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*  */
+
+.heading{
+    margin-top: 7rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5rem;
+}
+
+/*  */
+
+.section {
+    width: 100%;
+    margin: 0 auto ;
+    padding: 4rem 4rem;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 10%);
+    /* background: #f2f7f2; */
+}
+
+.heading_block  {
+    margin:2rem 0;
+    padding: 2rem 0;
+}
+
+/* .heading {
+    font-size: 4rem;
+    color: cadetblue;
+    font-weight: 700;
+} */
+
+.blog_heading {
+    width: 100%;
+    /* margin: 2rem 0; */
+    background: #F4F9FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.span_icon {
+    margin-right: 8rem;
+   
+}
+
+.material-symbols-outlined {
+    padding: 1rem;
+    border: none;
+    background: #eae1e1;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.heading {
+    margin-top: 7rem;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5rem;
+    color: black;
+    margin-left: 3rem;
+}
+
+
+
+.row_card {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    box-shadow: 0 5px 15px 0 rgb(0 0 0 / 10%);
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.img_block {
+    width: 30%;
+}
+
+.img_block img {
+    width: 100%;
+    height: 22.5rem;
+    border: 1px solid;
+}
+
+.content_block  {
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.primary_heading {
+    padding: 2rem 0;
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.secondary_heading {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.blog_author {
+    margin-bottom: 20px;
+}
+
+.tertiary_heading {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+span {
+    font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+
+/* media queries  */
+
+@media only screen and (max-width: 90em) {
+    html {
+      font-size:60%;
+    }
+}
+
+@media only screen and (max-width: 75em) {
+    html {
+      font-size:56.25%;
+    }
+}
+
+@media only screen and (max-width: 56.25em) {
+    html {
+      font-size:50%;
+    }
+}
+
+@media only screen and (max-width: 35em) {
+    html {
+      font-size:42%;
+    }
+}
+
+@media only screen and (max-width: 90em) {
+    .container, .section1 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 75em) {
+    .container, .section1 {
+        width: 100%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 75em) {
+    
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .span_icon {
+        display: none;
+    }
+
+    .img_block{
+        width: 100%;
+    }
+
+    .content_block{
+        width: 100%;
+    }
+
+    .primary_heading {
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+    .secondary_heading, .tertiary_heading {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 56.25em) {
+    
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .span_icon {
+        display: none;
+    }
+
+    .row_card {
+        display: block;
+        margin-bottom: 5rem;
+    }
+
+    .img_block{
+        width: 100%;
+    }
+
+    .content_block{
+        width: 100%;
+    }
+
+
+    .primary_heading {
+        text-align: justify;
+    }
+
+    .secondary_heading, .tertiary_heading {
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+    .secondary_heading {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 35em) {
+    
+    .heading {
+        font-size: 2.5rem;
+    }
+    
+    .span_icon {
+        display: none;
+    }
+
+    .row {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .row_card {
+        display: block;
+        margin-bottom: 5rem;
+    }
+
+    .img_block{
+        width: 100%;
+    }
+
+    .content_block{
+        width: 100%;
+    }
+
+
+    .primary_heading {
+        text-align: justify;
+    }
+
+    .secondary_heading, .tertiary_heading {
+        font-size: 2rem;
+        text-align: justify;
+    }
+
+    .secondary_heading {
+        display: none;
+    }
+
+}
